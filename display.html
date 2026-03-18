@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Display e Position no CSS</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Display e Position no CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Propriedades Display e Position no CSS</h1>
+    <h1>Propriedades Display e Position no CSS</h1>
 
-  <div class="container">
-    <h2>Display - Conceito</h2>
-    <p>A propriedade <strong>display</strong> define como um elemento aparece e se organiza na página.</p>
+    <div class="container">
+        <h2>Display - Conceito</h2>
+        <p>A propriedade <strong>display</strong> define como um elemento aparece e se organiza na página.</p>
 
-    <h3>block</h3>
-    <div class="box block">Ocupa toda a largura</div>
+        <h3>block</h3>
+        <div class="box block">Ocupa toda a largura</div>
 
-    <h3>inline</h3>
-    <span class="box inline">Inline 1</span>
-    <span class="box inline">Inline 2</span>
+        <h3>inline</h3>
+        <span class="box inline">Inline 1</span>
+        <span class="box inline">Inline 2</span>
 
-    <h3>inline-block</h3>
-    <div class="box inline-block">Box 1</div>
-    <div class="box inline-block">Box 2</div>
+        <h3>inline-block</h3>
+        <div class="box inline-block">Box 1</div>
+        <div class="box inline-block">Box 2</div>
 
-    <h3>none</h3>
-    <p>(Elemento escondido, não aparece)</p>
+        <h3>none</h3>
+        <p>(Elemento escondido, não aparece)</p>
 
-    <h3>flex</h3>
-    <div class="box flex">
-      <div class="item">Alinhamento horizontal ou vertical</div>
-      <div class="item">Controle fácil de espaçamento</div>
+        <h3>flex</h3>
+        <div class="box flex">
+            <div class="item">Alinhamento horizontal ou vertical</div>
+            <div class="item">Controle fácil de espaçamento</div>
+        </div>
+
+        <h3>grid</h3>
+        <div class="box grid">
+            <div class="item"> Características:</div>
+            <div class="item"> Cria um sistema baseado em linhas e colunas.</div>
+            <div class="item">Layout estruturado</div>
+            <div class="item">Maior controle de posicionamento</div>
+        </div>
     </div>
 
-    <h3>grid</h3>
-    <div class="box grid">
-      <div class="item">Cria um sistema baseado em linhas e colunas.</div>
-      <div class="item"> Características:</div>
-      <div class="item">Layout estruturado</div>
-      <div class="item">Maior controle de posicionamento</div>
+    <div class="container">
+        <h2>Position - Conceito</h2>
+        <p>A propriedade <strong>position</strong> define como um elemento é posicionado na página.</p>
+
+        <h3>static</h3>
+        <p>Valor padrão, segue o fluxo normal.</p>
+
+        <h3>relative + absolute</h3>
+        <div class="position-box">
+            Caixa pai
+            <div class="absolute">Absolute</div>
+        </div>
+
+        <h3>fixed</h3>
+        <p>Fica fixo na tela</p>
+        <p>Não se move com o scroll</p>
+        <p>Muito usado em menus e botões fixos</p>
+
+
+
+        <h3>sticky</h3>
+        <div class="sticky">Ele "gruda" no topo quando rolar</div>
     </div>
-  </div>
 
-  <div class="container">
-    <h2>Position - Conceito</h2>
-    <p>A propriedade <strong>position</strong> define como um elemento é posicionado na página.</p>
+    <div class="fixed">Botão Fixo</div>
 
-    <h3>static</h3>
-    <p>Valor padrão, segue o fluxo normal.</p>
-
-    <h3>relative + absolute</h3>
-    <div class="position-box">
-      Caixa pai
-      <div class="absolute">Absolute</div>
+    <div class="container">
+        <h2>Conclusão</h2>
+        <p>
+            O <strong>display</strong> controla como os elementos aparecem.
+            O <strong>position</strong> define onde eles ficam.
+        </p>
     </div>
-
-    <h3>fixed</h3>
-    <p>Fica fixo na tela</p>
-    <p>Não se move com o scroll</p>
-    <p>Muito usado em menus e botões fixos</p>
-
-
-
-    <h3>sticky</h3>
-    <div class="sticky">Eu grudo no topo quando rolar</div>
-  </div>
-
-  <div class="fixed">Botão Fixo</div>
-
-  <div class="container">
-    <h2>Conclusão</h2>
-    <p>
-      O <strong>display</strong> controla como os elementos aparecem.
-      O <strong>position</strong> define onde eles ficam.
-    </p>
-  </div>
 
 </body>
+
 </html>
